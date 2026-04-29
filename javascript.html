@@ -1,0 +1,30 @@
+
+
+
+<script>
+//dado un numero dado obtener  la suma de los inferiores a el hasta el uno
+//declarar un array con valores enteros, aplicar el ejercicio anterior a cada uno de los valores del array
+
+
+
+//PROGRAMA PRINCIPAL
+let tab=[5,10,3,15,8]
+Visualizar(tab)
+
+//FUNCIONES
+
+function Proceso(n){
+    let sum=0;
+    for (i=n-1; i>=1; i--){
+        sum = sum+i;
+    }
+    return sum;
+}
+
+function Visualizar(tab){
+   for (i=0;k<tab.length; k++){
+        document.write(Proceso(tab[k]) + " ");
+   }
+}
+
+</script>

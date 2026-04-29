@@ -1,0 +1,41 @@
+
+
+
+
+
+
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>  
+<script>
+//suma del sueldo de todos los empleados
+mat_sueldos = [
+                ["Pedro", 800, 2300, 1900],
+                ["Laura",1500,4000],
+                ["Saray",900,3200,5000]
+                ];
+   
+   function Visualizar (mat_sueldos){
+       for (i=0;i<mat_sueldos.length; i++){
+        suma=0
+           for (k=1; k<mat_sueldos[i].length; k++){
+                         suma = suma + mat_sueldos[i][k];
+             
+           }
+           alert (mat_sueldos[i][0]+" "+suma);
+           
+       }
+      
+   }           
+
+   Visualizar (mat_sueldos)
+
+
+</script>   
+
+
+</body>
+</html>

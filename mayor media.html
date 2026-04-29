@@ -1,0 +1,46 @@
+
+
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>  
+<script>
+//visualizar el trabajador con mayor media
+
+
+mat_sueldos = [
+                ["Pedro", 800, 2300, 1900],
+                ["Laura",1500,4000],
+                ["Saray",900,3200,5000]
+                ];
+   
+   function Visualizar (mat_sueldos){
+        mayor=0
+       for (i=0;i<mat_sueldos.length; i++){
+        suma=0; contador=0;
+           for (k=1; k<mat_sueldos[i].length; k++){
+                         suma = suma + mat_sueldos[i][k];
+                        contador ++
+           }
+                    media=suma/conta   
+                    if (media>mayor){
+                        mayor=media;
+                        nombre_trabajador=mat_sueldos[i][0]
+                    }        
+       }
+        return nombre_trabajador;
+   }           
+  
+   function Visualizar (dato){
+        alert(dato)
+   }
+   Visualizar ( resul = Proceso (mat_sueldos))
+
+
+</script>   
+
+
+</body>
+</html>

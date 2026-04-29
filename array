@@ -1,0 +1,37 @@
+
+
+
+
+
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/*
+Declarar un array con las notas de un alumno. Que diga cuantas notas aprobadas tiene y la media de las notas aprobadas.
+*/
+
+var notas = [5, 7, 3, 9, 2, 6];
+var aprobadas = 0;      
+for (var i = 0; i < notas.length; i++) {
+  if (notas[i] >= 5) {
+    aprobadas++;
+  }
+}
+alert("Cantidad de notas aprobadas: " + aprobadas);
+
+
+
+
+        
+
+
+  
+</script>
+
+</body>
+</html>

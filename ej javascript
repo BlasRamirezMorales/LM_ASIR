@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/*
+dados dos numeros enteros, visualizar los comprendidos entre ambos. Y al final diga cuantos valores negativos hay y sumar los valores entre los dos numeros
+
+*/
+var num1=parseInt(prompt("Introduce el primer número"))
+var num2=parseInt(prompt("Introduce el segundo número"))
+
+
+
+function Visualizar1(num1,num2){
+for (var i =num1 +1; i< num2; i++) {
+    alert(i);
+  }
+}  
+
+    var negativos=0;    
+    for (var i = num1 + 1; i < num2; i++) {
+    if (i < 0) {
+      negativos++;
+    }
+    }
+    alert("Cantidad de negativos: " + negativos);
+ 
+    acumulador=0;
+    for (var i = num1 + 1; i < num2; i++) {
+    acumulador += i;
+    }
+    alert("Suma de los valores entre los dos números: " + acumulador);
+
+    
+        
+Visualizar1(num1,num2);
+
+
+  
+</script>
+
+</body>
+</html>
